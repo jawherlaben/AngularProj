@@ -1,0 +1,51 @@
+
+    <div class="container">
+      <div class="left">
+        <div class="info">Informations</div>
+        <div class="eula"></div>
+      </div>
+      <div class="right">
+        
+        <div class="user">
+            <img class="img-circle" [src]="personne.path ? 'assets/img/' + personne.path : 'assets/img/none.png'"/>                    
+        </div>
+
+        <div class="form" >
+
+
+            <div class="div-info">
+                <label>Name</label>
+                <div class="value">{{personne.name}}</div>
+              </div>
+
+              <div class="div-info">
+                <label>Firstname</label>
+                <div class="value">{{personne.firstname}}</div>
+              </div>
+              
+              <div class="div-info">
+                <label>Job</label>
+                <div class="value">{{personne.job}}</div>
+              </div>
+              
+              <div class="div-info">
+                <label>Age</label>
+                <div class="value">{{personne.age}}</div>
+              </div>
+              
+              <div class="div-info">
+                <label>Cin</label>
+                <div class="value">4321</div>
+              </div>
+            
+              <div class="button-container">
+                <div >
+                    <button class="button delete" (click)="deletePersonne()"> Delete </button>
+                </div>
+            </div>
+            
+            
+            </div>
+        </div>
+    </div>
+  

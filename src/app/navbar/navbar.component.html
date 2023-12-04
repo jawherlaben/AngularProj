@@ -1,0 +1,48 @@
+
+<nav class="slidemenu">
+  
+  <input  [routerLink]="['cvTech']" type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
+  <label for="slide-item-1">
+    <p class="icon">💼</p>
+    <span >CvTech</span>
+  </label>
+  
+  <input  [routerLink]="['colorChanger']" type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
+  <label for="slide-item-2">
+    <p class="icon">🎨</p>
+    <span>Color</span>
+  </label>
+  
+
+  
+  <input [routerLink]="['todo']" type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+  <label for="slide-item-3">
+    <p class="icon">📋</p>
+    <span>Todo</span>
+  </label>
+
+  <input [routerLink]="['images']" type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+  <label for="slide-item-4">
+    <p class="icon">📷</p>
+    <span>Images</span>
+  </label>
+
+  <input  [routerLink]="['login']" type="radio" name="slideItem" id="slide-item-5" class="slide-toggle"/>
+  <label for="slide-item-5">
+    <p class="icon">🔑</p>
+    <span  >Authentification</span>
+  </label>
+  
+  <div class="clear"></div>
+  
+  <div class="slider">
+    <div class="bar"></div>
+  </div>
+  
+</nav>
+
+<div class="page"> 
+  <div > 
+<router-outlet></router-outlet>
+  </div>
+</div>

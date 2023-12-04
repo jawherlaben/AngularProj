@@ -1,0 +1,22 @@
+.list-group-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Cette propriété assure l'alignement vertical au centre */
+    width: 100%;
+}
+
+.img-container{
+    display: flex; /* Ajoutez flex ici si vous souhaitez ajouter des propriétés flex spécifiques à l'image */
+    justify-content: center; /* Centre horizontalement l'image dans .img-container si nécessaire */
+    align-items: center; /* Centre verticalement l'image dans .img-container si nécessaire */
+    height: 80px;
+    width: 80px;
+    margin-right: 10px; /* Ajoutez une marge à droite pour un espacement entre l'image et le texte */
+}
+
+.img {
+    width: 80px; /* Vous pouvez déplacer la largeur et la hauteur ici si vous les retirez de l'attribut HTML */
+    height: 80px;
+    /* Ajoutez border-radius si vous voulez que vos images soient rondes */
+    border-radius: 50%;
+}

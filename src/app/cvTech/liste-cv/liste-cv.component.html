@@ -1,0 +1,8 @@
+<div class="cv-list">
+  <app-item-cv 
+    *ngFor="let personne of personnes" 
+    [personne]="personne"
+    (selectedPersonne)="selectPersonne($event)"
+    >
+  </app-item-cv>
+</div>

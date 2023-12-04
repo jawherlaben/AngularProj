@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="titre-cvs">
+        <h2>Liste des Candidats Embauchés</h2>
+    </div>
+
+    <div *ngIf="embauchers">
+        <span *ngFor="let embaucher of embauchers">
+            <img [src]="embaucher.path ? 'assets/img/' + embaucher.path : 'assets/img/none.png'"
+            width="100px" height="100px"
+            alt="{{embaucher.firstname}}"> {{embaucher.firstname}} {{embaucher.name}}
+        </span>
+
+    </div>
+
+</div>

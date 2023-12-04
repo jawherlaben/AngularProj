@@ -1,0 +1,30 @@
+<div>
+    <div class="container">
+
+      <div class="left">
+        <div class="login">Login</div>
+        <div class="eula"></div>
+      </div>
+
+      <div class="right">
+        <form  #formulaire="ngForm">
+          <label for="email">Email</label>
+          <input id="email" type="email" ngModel name="email" class="form-control" required  #inputMail="ngModel">
+
+          <div *ngIf="inputMail.invalid && inputMail.dirty" class="alert alert-danger">Please enter a valid email address.</div>
+
+          <label for="password">Password</label>
+          <input id="password" minlength="4"  type="password" ngModel name="password" class="form-control" required #pwdInput="ngModel">
+          
+          <div *ngIf="pwdInput.invalid && pwdInput.touched" class="alert alert-danger"> Please enter a valid Password. </div>
+
+
+        </form>
+
+        <div class="button-container">
+            <button [disabled]="formulaire.invalid"  class="btn btn-envoyer" id="submit"> Envoyer </button>
+        </div>    
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,7 @@
+html, body {
+  height: 100%; /* Assurez-vous que le corps de la page prend toute la hauteur */
+  margin: 0; /* Supprime la marge par défaut */
+  display: flex; /* Utilisez flexbox pour centrer les enfants */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}

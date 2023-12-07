@@ -1,1 +1,148 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+@import url('https://rsms.me/inter/inter-ui.css');
+
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+body {
+    background-color: aliceblue;
+}
+.right {
+    background: #474A59;
+    border-radius: 50px;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+    position: relative;
+    width: 50%;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    place-content: center;
+    width: calc(100% - 40px);
+}
+.login {
+    font-size: 50px;
+    font-weight: 900;
+}
+.container {
+    display: flex;
+    height: 60vh;
+    margin: 0 auto;
+    width: 50%;
+}
+.left {
+    background: white;
+    height: calc(100% - 40px);
+    top: 20px;
+    position: relative;
+    padding: 2em;
+    width: 65%;
+}
+.eula {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 40px;
+}
+svg {
+    position: absolute;
+    width: 320px;
+}
+path {
+    fill: none;
+    stroke: url(#linearGradient);;
+    stroke-width: 4;
+    stroke-dasharray: 240 1386;
+}
+.form {
+    margin: 40px;
+    height: 100%;
+    position: absolute;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin: 5px; 
+}
+label {
+    color:  #c2c2c5;
+    display: block;
+    font-size: 14px;
+    height: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+input {
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 5px 0px;
+    color: #f2f2f2;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    outline: none !important;
+    width: 100%;
+}
+input::-moz-focus-inner { 
+    border: 0;
+}
+img {
+    background: none repeat scroll 0 0;
+    border: 4px solid #FFFFFF;
+    border-radius: 50px;
+    margin: 20px;
+    width: 100%;
+}
+#submit {
+    color: #ffffff;
+    margin-top: 40px;
+    transition: color 300ms;
+}
+  
+.is-invalid {
+    border: 1px solid red;
+}
+  
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+@media (max-width: 767px) {
+    .right {
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        max-height: 350px;
+    }
+    .page {
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .left {
+      height: 100%;
+      left: 20px;
+      width: calc(100% - 40px);
+      max-height: 270px;
+    }
+    .container {
+      flex-direction: column;
+      height: 630px;
+      width: 320px;
+    }
+}

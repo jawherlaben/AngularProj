@@ -1,11 +1,9 @@
 <div class="card-container">
     <div class="card">
         <div class="front">
-            <div class="cover">
-                
-            </div>
+            <div class="cover"></div>
             <div class="user">
-                <img class="img-circle" [src]="personne.path ? 'assets/img/' + personne.path : 'assets/img/none.png'"/>                    
+                <img [src]="personne.path ? 'assets/img/' + personne.path : 'assets/img/none.png'"/>                    
             </div>
             <div class="content">
                 <div class="main">
@@ -22,43 +20,31 @@
             </div>
         </div> 
         <div class="back">
-            <div class="header">
-                
-            </div>
+            <div class="header"></div>
             <div class="content">
                 <div class="main">
                     <h4 class="text-center">{{personne.job}} </h4>
                     <p class="text-center">{{personne.cin}}</p>
-
                     <div class="stats-container">
                         <div class="stats">
                             <h4>235</h4>
-                            <p>
-                                Followers
-                            </p>
+                            <p>Followers</p>
                         </div>
                         <div class="stats">
                             <h4>114</h4>
-                            <p>
-                                Following
-                            </p>
+                            <p>Following</p>
                         </div>
                         <div class="stats">
                             <h4>35</h4>
-                            <p>
-                                Projects
-                            </p>
+                            <p>Projects</p>
                         </div>
                     </div>
-
                 </div>
             </div>
+            
             <div class="footer">
-                <div >
-                    <button class="button embaucher" (click)="embauchePersonne()"> Embaucher </button>
-                    <button class="button details" (click)="navigateToDetails(personne)"> Détails </button>
-                    <button class="button debaucher" (click)="debaucherPersonne()"> Débaucher </button>
-
-                </div>
+                <button class="button embaucher" (click)="embauchePersonne()"> Embaucher </button>
+                <button class="button details" (click)="navigateToDetails(personne)"> Détails </button>
+                <button class="button debaucher" (click)="debaucherPersonne()"> Débaucher </button>
             </div>
         </div> 

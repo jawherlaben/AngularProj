@@ -301,34 +301,3 @@
         visibility: visible;
     }
 }
-
-.button.embaucher {
-    background-color: #28a745; 
-}
-
-.button.embaucher:hover {
-    background-color: #218838; 
-}
-
-
-.button.debaucher {
-    background-color: #dc3545; 
-}
-
-.button.debaucher:hover {
-    background-color: #c82333; 
-}
-
-
-.button.details {
-    background-color: #999; 
-}
-
-.button.details:hover {
-    background-color: #777777; 
-}
-
-
-
-
-

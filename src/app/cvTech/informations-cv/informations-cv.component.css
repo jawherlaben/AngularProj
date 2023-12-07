@@ -34,9 +34,19 @@
 
 .button.delete {
   background-color: #dc3545;
+  transition: 0.3s;
 }
 
 .button.delete:hover {
-  background-color: #c82333;
+  background-color: #8a1622;
+}
+
+.button.retour {
+  color: black;
+  transition: 0.3s;
+}
+
+.button.retour:hover {
+  background-color: grey;
 }
 

@@ -38,12 +38,13 @@ export class InformationsCvComponent {
     );
   }
 
-  deletePersonne() {
-    
+  deletePersonne() { 
     this.embaucheService.deleteEmbauche(this.personne.id);
     this.cvService.deletePersonne(this.personne.id)
     this.router.navigate(['cvTech'])
   }
 
-
+  retour() { 
+      this.router.navigate(['cvTech']);
+  }
 }

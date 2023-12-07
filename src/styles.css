@@ -1,6 +1,16 @@
 @import 'https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
 @import url('https://rsms.me/inter/inter-ui.css');
-
+@import 'ngx-toastr/toastr';
+.suc {
+    position: absolute;
+    top: 3em;
+    right: 5em;
+    background-color: #218838;
+    color: white;
+    padding: 1rem;
+    width: max-content;
+    border-radius: 50px;
+}
 ::selection {
   background: #2D2F36;
 }
@@ -9,6 +19,9 @@
 }
 ::-moz-selection {
   background: #2D2F36;
+}
+md-toast.md-success-toast-theme {
+    background-color: green;
 }
 body {
     background-color: aliceblue;
@@ -120,6 +133,33 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 20px; 
+}
+
+
+.button.embaucher {
+    background-color: #28a745; 
+}
+
+.button.embaucher:hover {
+    background-color: #218838; 
+}
+
+
+.button.debaucher {
+    background-color: #dc3545; 
+}
+
+.button.debaucher:hover {
+    background-color: #c82333; 
+}
+
+
+.button.details {
+    background-color: #999; 
+}
+
+.button.details:hover {
+    background-color: #777777; 
 }
 
 @media (max-width: 767px) {

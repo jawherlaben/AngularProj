@@ -15,21 +15,13 @@ export class EmbaucheComponent implements OnInit{
   @Input()
   embaucher!: Personne;
 
-  constructor(private embaucheService : EmbaucheService,
-    private toastr: ToastrService
-    )
-  {
-    console.log("constructor embauche.component");
-  }
-  ngOnInit(): void {
-    
+  constructor(private embaucheService : EmbaucheService, private toastr: ToastrService) {}
+  
+  ngOnInit(): void {  
     this.embaucheService.getEmbauches().subscribe(embauches => {
       this.embauchers = embauches;
     });
-
   }
-
-  
 }
 
 

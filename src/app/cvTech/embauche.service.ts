@@ -12,7 +12,7 @@ export class EmbaucheService {
   private embauchesSubject: BehaviorSubject<Personne[]> = new BehaviorSubject<Personne[]>([]);
   embauches$: Observable<Personne[]> = this.embauchesSubject.asObservable();
 
-  constructor(private toastr: ToastrService) { } // Inject ToastrService
+  constructor(private toastr: ToastrService) { }
 
   getEmbauches(): Observable<Personne[]> {
     return this.embauches$;
@@ -22,9 +22,9 @@ export class EmbaucheService {
     if (this.embauches.indexOf(embauche) < 0) {
       this.embauches.push(embauche);
       this.embauchesSubject.next(this.embauches);
-      this.toastr.success('Embauché avec succès!', 'Succès'); // Utilisez ToastrService pour afficher un message de succès
+      this.toastr.success('Embauché avec succès!', 'Succès');
     } else {
-      this.toastr.error('Ce CV a déjà été sélectionné.', 'Erreur'); // Utilisez ToastrService pour afficher un message d'erreur
+      this.toastr.error('Ce CV a déjà été sélectionné.', 'Erreur');
     }
   }
 

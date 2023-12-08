@@ -32,7 +32,6 @@ export class DetailCvComponent implements OnInit {
   }
 
   debaucherPersonne(){
-    console.log(this.embaucheService.embauches$);
     this.embaucheService.deleteEmbauche(this.personne.id);
     this.embauche = false;
 

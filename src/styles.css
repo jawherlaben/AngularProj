@@ -88,7 +88,7 @@ label {
     margin-bottom: 5px;
 }
 input {
-    background: transparent;
+    background-color: grey;
     border: 1px solid black;
     border-radius: 50px;
     margin: 5px 0px;

@@ -24,6 +24,7 @@ import { ErrorComponent } from './error/error.component';
 import { AddCvComponent } from './add-cv/add-cv.component';
 import { SuiteImagesComponent } from './suite-images/suite-images.component';
 import { AuthentificationTemplateDrivenComponent } from './authentification-template-driven/authentification-template-driven.component';
+import { ImagePipe } from './image.pipe';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { AuthentificationTemplateDrivenComponent } from './authentification-temp
     ErrorComponent,
     AddCvComponent,
     SuiteImagesComponent,
-    AuthentificationTemplateDrivenComponent
+    AuthentificationTemplateDrivenComponent,
+    ImagePipe
   ],
   imports: [
     BrowserModule,

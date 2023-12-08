@@ -33,7 +33,7 @@ export class InformationsCvComponent {
         this.personne = response;
       },
       (err) => {
-        this.router.navigate(['**']); // où /details/:id est le chemin dans votre configuration de route
+        this.router.navigate(['**']);
       }
     );
   }

@@ -8,6 +8,10 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class TodosComponent {
 
+  addTodo() {
+    console.log("Add New TODO");
+  }
+
 
   authForm = this.fb.group({
     email: ['', [Validators.required, Validators.email]],

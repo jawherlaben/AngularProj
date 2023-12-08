@@ -1,3 +1,25 @@
 .ng-invalid.ng-touched{
   border-color: red;   
 }
+.formdivs {
+  width: 90%;
+  padding: 0 2em;
+}
+
+.formdivs input {
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 5px 0px;
+    color: #f2f2f2;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    outline: none !important;
+    width: 100%;
+}
+
+.button-container button {
+  border: 1px solid black;
+  border-radius: 50px;
+}

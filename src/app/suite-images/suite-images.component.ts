@@ -14,6 +14,7 @@ export class SuiteImagesComponent implements OnInit {
 
   private images: string[] = [
     'insat1.jpeg',
+    // '',
     'insat2.jpg',
     'insat3.jpeg',
     'insat4.jpeg',

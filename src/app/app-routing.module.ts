@@ -23,8 +23,7 @@ const routes: Routes = [
   { path: 'colorChanger', component: ColorChangerComponent },
   { path: 'todo', component: TodosComponent },
   { path: 'images', component:  SuiteImagesComponent},
-  { path: 'login', component: AuthentificationComponent },
-  {path: 'auth',component : AuthentificationTemplateDrivenComponent},
+  {path: 'login',component : AuthentificationTemplateDrivenComponent},
 
   { path: '**', component: ErrorComponent },
 ];

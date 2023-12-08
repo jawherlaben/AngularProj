@@ -8,17 +8,20 @@
 
       <div class="right">
         <form  #formulaire="ngForm">
-          <label for="email">Email</label>
-          <input id="email" type="email" ngModel name="email" class="form-control" required  #inputMail="ngModel">
+          <div class="formdivs">
+            <label for="email">Email</label>
 
-          <div *ngIf="inputMail.invalid && inputMail.dirty" class="alert alert-danger">Please enter a valid email address.</div>
+            <input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ngModel name="email" class="form-control" required  #inputMail="ngModel">
 
-          <label for="password">Password</label>
-          <input id="password" minlength="4"  type="password" ngModel name="password" class="form-control" required #pwdInput="ngModel">
+            <div *ngIf="inputMail.invalid && inputMail.touched" class="alert alert-danger">Please enter a valid email address.</div>
+          </div>
           
-          <div *ngIf="pwdInput.invalid && pwdInput.touched" class="alert alert-danger"> Please enter a valid Password. </div>
-
-
+          <div class="formdivs">
+            <label for="password">Password</label>
+            <input id="password" minlength="4" type="password" ngModel name="password" class="form-control" required #pwdInput="ngModel">
+            
+            <div *ngIf="pwdInput.invalid && pwdInput.touched" class="alert alert-danger"> Please enter a valid Password. </div>
+          </div>
         </form>
 
         <div class="button-container">

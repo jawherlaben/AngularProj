@@ -1,6 +1,6 @@
 <li class="list-group-item" (click)="selectPersonne()">
   <div class="img-container">
-    <img [src]="personne.path ? 'assets/img/' + personne.path : 'assets/img/none.png'" alt="{{personne.name}}">
+    <img src="assets/img/{{ personne.path | image }}" alt="{{personne.name}}">
   </div>
   <span>{{personne.firstname}} {{personne.name}}</span>
 </li>

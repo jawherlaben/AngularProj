@@ -9,7 +9,8 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './detail-cv.component.html',
   styleUrls: ['./detail-cv.component.css']
 })
-export class DetailCvComponent implements OnInit{
+export class DetailCvComponent implements OnInit {
+  protected embauche: Boolean = false;
 
   constructor(
     private embaucheService : EmbaucheService,
@@ -27,11 +28,13 @@ export class DetailCvComponent implements OnInit{
 
   embauchePersonne(){
     this.embaucheService.addEmbauche (this.personne);
+    this.embauche = true;
   }
 
   debaucherPersonne(){
     console.log(this.embaucheService.embauches$);
     this.embaucheService.deleteEmbauche(this.personne.id);
+    this.embauche = false;
 
   }
 

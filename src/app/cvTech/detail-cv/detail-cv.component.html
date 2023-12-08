@@ -44,7 +44,7 @@
             
             <div class="footer">
                 <button class="button embaucher" (click)="embauchePersonne()"> Embaucher </button>
+                <button class="button debaucher" *ngIf="this.embauche" (click)="debaucherPersonne()"> Débaucher </button>
                 <button class="button details" (click)="navigateToDetails(personne)"> Détails </button>
-                <button class="button debaucher" (click)="debaucherPersonne()"> Débaucher </button>
             </div>
         </div> 

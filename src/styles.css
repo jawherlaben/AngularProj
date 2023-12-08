@@ -1,16 +1,6 @@
 @import 'https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
 @import url('https://rsms.me/inter/inter-ui.css');
 @import 'ngx-toastr/toastr';
-.suc {
-    position: absolute;
-    top: 3em;
-    right: 5em;
-    background-color: #218838;
-    color: white;
-    padding: 1rem;
-    width: max-content;
-    border-radius: 50px;
-}
 ::selection {
   background: #2D2F36;
 }
